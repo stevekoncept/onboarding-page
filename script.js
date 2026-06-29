@@ -166,7 +166,23 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const password = document.getElementById("loginPassword").value;
 
   const regex = /^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/;
+  //   function isValidPassword(password) {
+  //     let hasUppercase = false;
+  //     let hasSpecialChar = false;
 
+  //     if (password.length < 8) return false;
+  //     for (let i = 0; i < password.length; i++) {
+  //       const char = password[i];
+
+  //       if (char >= "A" && char <= "Z") {
+  //         hasUppercase = true;
+  //       }
+  //       if ('!@#$%^&*(),.?":{}|<>'.includes(char)) {
+  //         hasSpecialChar = true;
+  //       }
+  //     }
+  //     return hasUppercase && hasSpecialChar;
+  //   }
   if (!regex.test(password)) {
     e.preventDefault();
 
